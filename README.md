@@ -30,7 +30,7 @@ Applying the gaussian blur adds colors of gray to image when the algorithm depen
 
 
 ## Step 4: Find Coordinate Variables
-The image is then analyzed to find the coordinate points of each cone. Ideally, each cone would coorespond to one point on the image, but this was difficult to implement. Instead, the algorithm uses each white pixel as one coordinate point. This is sufficient, but is sub-optimal. A short delay is introduced when array indexing over the entire image and farther away cones are weighted proportionally less.
+The image is then analyzed to find the coordinate points of each cone. Ideally, each cone would coorespond to one point on the image, but this was difficult to implement. Instead, the algorithm uses each white pixel as one coordinate point. This is sufficient, but is sub-optimal. A short delay is introduced when array indexing over the entire image and farther away cones are weighted proportionally less. One benefit is that noise in the image is only weighted a small amount.
 
 
 ## Step 5: Sort Coordinate Variables
